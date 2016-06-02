@@ -18,18 +18,17 @@ $ git clone https://github.com/jerrymooyman/howto-react-with-webpack.git jam-res
 
 3) Now, edit the git config file and point your repo to a new origin  
 
-```  
+``` shell 
 $ cd jam-resume  
-$ vim .git/config  
-```
 
     [remote "origin"]  
     fetch = +refs/heads/*:refs/remotes/origin/*  
     url = https://github.com/jerrymooyman/jam-resume.git  
+```
 
 4) Push your changes  
 
-```
+``` shell
 $ git push origin master  
 ```
 
