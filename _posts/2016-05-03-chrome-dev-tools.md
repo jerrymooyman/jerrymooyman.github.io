@@ -64,19 +64,19 @@ CSS styles can be applied to console log message.
 
 **Logging Objects**
 
-```
-> console.log(document)
+```javascript
+console.log(document)
 ```
 This will log the html of the object to the console.
 
 ![alt text]({{ "/assets/img/console-log-document.png" | prepend: site.baseurl }})  
 
-```
-> console.dir(document)
+```javascript
+console.dir(document)
 ```
 This will log the javascript notation of the object to the console.
 
-![alt text]({{ "/assets/images/console-log-document-javascript.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/console-log-document-javascript.png" | prepend: site.baseurl }})  
 
 <br>
 **Timing**  
