@@ -3,6 +3,8 @@ layout: post
 title: JavaScript Design Patterns
 ---
 
+# Creational Design Patterns
+
 ## Constructor Pattern
 
 ``` javascript
@@ -34,3 +36,28 @@ MyObject.prototype.toString = function() {
     return this.param1 + '' + this.param2;
 }
 ```
+
+## Module Pattern
+
+## Factory Pattern
+
+## Singleton Pattern
+
+# Structural Design Patterns
+
+## Decorator Pattern
+
+## Facade Pattern
+
+## Flyweight
+
+# Behavioral Design Patterns
+
+## Observer Pattern
+
+## Mediator Pattern
+
+## Command Pattern
+
+
+# References
