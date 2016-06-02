@@ -5,16 +5,6 @@ title: JavaScript Design Patterns
 
 ## Constructor Pattern
 
-{% highlight javascript %}
-class User < ActiveRecord::Base
-  attr_accessible :email, :name
-
-  ... tons of other crap ...
-
-end
-
-{% endhighlight %}
-
 ``` javascript
 var MyObject = function (param1, param2) {
     this.param1 = param1;
@@ -39,7 +29,7 @@ An improvement would be to move the 'toString' function to the prototype.
 This is done by using the following format: 
 className.prototype.methodname = function(args) { ... }
 
-```
+``` javascript
 MyObject.prototype.toString = function() {
     return this.param1 + '' + this.param2;
 }
