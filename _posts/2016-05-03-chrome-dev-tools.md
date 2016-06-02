@@ -2,7 +2,7 @@
 layout: post
 title: Chrome Dev Tools
 ---
-![alt text]({{ "/assets/images/chrome-developer-tools.jpg" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/chrome-developer-tools.jpg" | prepend: site.baseurl }})  
 
 Here are some notes I took from a [Chrome Developer Tools course on PluralSight](https://app.pluralsight.com/library/courses/chrome-developer-tools/table-of-contents)  
 
@@ -16,7 +16,7 @@ Console logging levels
 * Assert  
 
 <br>
-![alt text]({{ "/assets/images/console-log-levels.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/console-log-levels.png" | prepend: site.baseurl }})  
 
 ### Console.Assert
 
@@ -33,9 +33,9 @@ A console assert that is false will show an assertion error
 A group is started with 'group' and closed with 'groupEnd'. Any log lines between the start and end of the group will be grouped together.  
 Groups can also be nested.
 
-![alt text]({{ "/assets/images/javascript-log-groups.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/javascript-log-groups.png" | prepend: site.baseurl }})  
 
-![alt text]({{ "/assets/images/console-log-groups.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/console-log-groups.png" | prepend: site.baseurl }})  
 
 **Formatting options**
 
@@ -49,18 +49,18 @@ The above formatting options can be used to format log message.
 
 <br>
 *javascript*  
-![alt text]({{ "/assets/images/javascript-formatting.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/javascript-formatting.png" | prepend: site.baseurl }})  
 
 *console output*  
-![alt text]({{ "/assets/images/console-formatting.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/console-formatting.png" | prepend: site.baseurl }})  
 
 CSS styles can be applied to console log message.
 
 *javascript*  
-![alt text]({{ "/assets/images/javascript-log-css-style.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/javascript-log-css-style.png" | prepend: site.baseurl }})  
 
 *console output*  
-![alt text]({{ "/assets/images/console-log-css-style.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/console-log-css-style.png" | prepend: site.baseurl }})  
 
 **Logging Objects**
 
@@ -69,7 +69,7 @@ CSS styles can be applied to console log message.
 ```
 This will log the html of the object to the console.
 
-![alt text]({{ "/assets/images/console-log-document.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/console-log-document.png" | prepend: site.baseurl }})  
 
 ```
 > console.dir(document)
@@ -115,10 +115,10 @@ monitorEvents($('h1'), 'mouse')
 ```
 With this command, all mouse events triggered on the matching 'h1' element will be logged to the console.
 
-![alt text]({{ "/assets/images/console-monitor-events.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/console-monitor-events.png" | prepend: site.baseurl }})  
 
 This is a list of the event types
-![alt text]({{ "/assets/images/chrome-devtools-event-types.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/chrome-devtools-event-types.png" | prepend: site.baseurl }})  
 
 
 ## References  
