@@ -5,10 +5,10 @@ title: Better Web Forms
 
 
 
-###Autocomplete
+### Autocomplete
 [Auto Complete Example](http://greenido.github.io/Product-Site-101/form-cc-example-m3.html)
 
-###User Inputs
+### User Inputs
 
 Use data lists as an alternative to dropdowns  
 [MDN - data lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist)
@@ -16,7 +16,7 @@ Use data lists as an alternative to dropdowns
 [Web Fundamentals: User Input](https://developers.google.com/web/fundamentals/design-and-ui/input/?hl=en)
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
-###Labels
+### Labels
 Using label's 'for' attribute, will allow a using to send the focus to the input control when the click the label or the input control.
 
 ## References
