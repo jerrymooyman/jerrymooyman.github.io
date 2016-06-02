@@ -30,7 +30,7 @@ The `new` keyword
 
 The drawback is that the `toString` function is duplicated for each copy of the MyObject.
 An improvement would be to move the `toString` function to the prototype.
-This is done by using the following format: 
+This is done by using the following format:   
 > className.prototype.methodname = function(args) { ... }
 
 ``` javascript
