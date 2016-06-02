@@ -21,7 +21,7 @@ var MyObject = function (param1, param2) {
 var object = new MyObject('hello', 'world!');
 ```
 
-The new keyword
+The `new` keyword
 
 * creates a brand new object
 * links to an object prototype
@@ -31,7 +31,7 @@ The new keyword
 The drawback is that the `toString` function is duplicated for each copy of the MyObject.
 An improvement would be to move the `toString` function to the prototype.
 This is done by using the following format: 
-className.prototype.methodname = function(args) { ... }
+> className.prototype.methodname = function(args) { ... }
 
 ``` javascript
 MyObject.prototype.toString = function() {
