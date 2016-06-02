@@ -124,4 +124,4 @@ MyObject.prototype.toString = function() {
 
 
 # References
-* https://app.pluralsight.com/library/courses/javascript-practical-design-patterns
+[Practical Design Patterns in JavaScript](https://app.pluralsight.com/library/courses/javascript-practical-design-patterns)  
