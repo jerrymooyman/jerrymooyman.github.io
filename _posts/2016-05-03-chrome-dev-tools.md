@@ -21,7 +21,7 @@ Console logging levels
 ### Console.Assert
 
 ```javascript
-> console.assert(true)
+console.assert(true)
 ```
 
 A console assert that is true will be ignored.  
