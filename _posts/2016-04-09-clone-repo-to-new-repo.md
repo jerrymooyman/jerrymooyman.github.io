@@ -12,7 +12,7 @@ This is useful if you want to start a new project using an existing repo as a sl
 
 2) Clone existing repo into a new directory  
 
-``` console 
+``` shell 
 $ git clone https://github.com/jerrymooyman/howto-react-with-webpack.git jam-resume      
 ```
 
