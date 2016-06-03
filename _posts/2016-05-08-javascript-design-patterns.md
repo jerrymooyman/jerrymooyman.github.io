@@ -156,7 +156,38 @@ var task1 = new Task(Repo.get(1))
 var task1.save()
 ```
 
-## Factory Pattern
+## Factory Pattern  
+
+ * simplifies object creation
+ * create different objects based on need
+
+``` javascript
+// repo factory
+var repoFactory = function() {
+
+    this.getRepo = function(repoType) {
+        if(repoType === 'task') {
+            var taskRepo = require('./taskRepo')()
+            return taskRepo
+        }
+        if(repoType === 'user') {
+            var userRepo = require('./userRepo')()
+            return userRepo
+        }
+    }
+}
+
+module.exports = new repoFactory;
+```
+
+``` javascript
+// main.js
+var repoFactory = require('./repoFactory')
+
+var task1 = new Task(repoFactory.getRepo('task').get(1))
+```
+
+You can see by this example that the logic for setting up and determining the required repo has been deferred to the repoFactory module.
 
 ## Singleton Pattern
 
