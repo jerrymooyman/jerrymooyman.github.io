@@ -102,6 +102,10 @@ MyObject.prototype.toString = function() {
 
 ## Module Pattern
 
+The module pattern is a way to organise related code into a cohesive unit. In this example, the repo module contains only database related functions.  
+
+Also, it is important to note that due to the way javascript closures work, private variables, such as `db` in this case, are not accessible to anything outside of the module.
+
 ``` javascript
 // repo module
 
