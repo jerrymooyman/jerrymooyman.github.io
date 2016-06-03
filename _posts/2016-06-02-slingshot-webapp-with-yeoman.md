@@ -32,7 +32,8 @@ Install it globally. This will only need to be done once.
 
 [Here](http://yeoman.io/generators/) is a list of generators.  
 
-*This is a list of my favourite genertors*
+# This is a list of my favourite genertors  
+This will be a growing list and I will add to it as I use new ones.
 
 ## React-Webpack-Redux
 
