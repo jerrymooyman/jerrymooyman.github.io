@@ -52,7 +52,6 @@ yo react-webpack-redux
 
 ```
 
-
 # References  
 [Yeoman](http://yeoman.io/)  
 [generator-react-webpack-redux](https://github.com/stylesuxx/generator-react-webpack-redux)  
