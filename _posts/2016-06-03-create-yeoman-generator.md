@@ -47,5 +47,5 @@ Project Structure
 ```
 
 # References  
+[Authoring](http://yeoman.io/authoring/)  
 [Yeoman Generator-Generator](https://github.com/yeoman/generator-generator)  
-[Authoring](http://yeoman.io/authoring/)
