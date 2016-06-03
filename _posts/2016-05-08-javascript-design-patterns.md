@@ -102,6 +102,56 @@ MyObject.prototype.toString = function() {
 
 ## Module Pattern
 
+``` javascript
+// repo module
+
+var repo = function() {
+    
+    var db = {}
+
+    var get = function(id) {
+        return {
+            name: 'new task from database'
+        }
+    }    
+
+    var save = function(task) {
+        console.log('saving task to database')
+    }
+
+    // this is the revealing module pattern
+    return {
+        get: get,
+        save: save
+    }
+}
+
+module.exports = repo();
+```
+
+``` javascript
+// task.js
+var Repo = require('./repo')
+
+Task.prototype.save = function() {
+    // passes this to the save function of Repo which in this case will
+    // be the task
+    Repo.save(this)
+}
+```
+
+``` javascript
+// main.js
+var Task = require('./task')
+var Repo = require('./repo')
+
+// uses the repo to fetch a database record with id 1 to populate a Task object
+var task1 = new Task(Repo.get(1))
+// calls save, which will internally call save on Repo passing task as 
+// the argument
+var task1.save()
+```
+
 ## Factory Pattern
 
 ## Singleton Pattern
