@@ -21,7 +21,7 @@ social:
 # "Hi, I'm _______"
 name: Jerry
 email: jamooyman@gmail.com
-tagline: "`Computer Programmer` blah blah `DotNet` blah blah `ReactJs` blah blah `JavaScript` blah blah"
+tagline: "<code class="highlighter-rouge">Computer Programmer</code> blah blah `DotNet` blah blah `ReactJs` blah blah `JavaScript` blah blah"
 
 # Google Analytics key, leave blank to ignore
 google_analytics_key:
