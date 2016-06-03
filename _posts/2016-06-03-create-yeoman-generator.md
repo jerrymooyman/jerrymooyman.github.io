@@ -7,16 +7,16 @@ categories:
 ---
 
 # Yeoman Generators  
-There are many generators available for scafolding you web application with Yeoman.  These are very opinionated and may not fit your project needs perfectly.  
+There are many generators available for scafolding your web application with Yeoman.  These are very opinionated and may not fit your project needs perfectly.  
 
 So, why not create your own generator?
 
 Yeoman provides documentation to do just that.
 
-Another option is to use the generator built by Yeoman to help you get started. Its a generator to generate generators...
+In addition, you could use the generator built by Yeoman to help you get started. Its a generator to generate generators...
 
 # Generator-Generator  
-[Repo](https://github.com/yeoman/generator-generator)  
+[Generator-Generator Repo](https://github.com/yeoman/generator-generator)  
 
 ## Setup  
 ``` shell
