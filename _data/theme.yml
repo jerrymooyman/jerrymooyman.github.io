@@ -21,7 +21,7 @@ social:
 # "Hi, I'm _______"
 name: Jerry
 email: jamooyman@gmail.com
-tagline: "<code class='highlighter-rouge'>Computer Programmer</code> ... blah blah ... <code class='highlighter-rouge'>JavaScript</code> ... blah blah ... <code class='highlighter-rouge'>Tennis</code> ... blah blah ... <code class='highlighter-rouge'>Chess</code>"
+tagline: "<code class='highlighter-rouge'>Computer Programmer</code> ... blah blah ... <code class='highlighter-rouge'>JavaScript</code> ... blah blah ... <code class='highlighter-rouge'>Tennis</code> blah blah ... <code class='highlighter-rouge'>Home Improvement</code> ... blah blah ... <code class='highlighter-rouge'>Chess</code>"
 
 # Google Analytics key, leave blank to ignore
 google_analytics_key:

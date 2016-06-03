@@ -213,6 +213,10 @@ var repo1 = TaskRepo.getInstance()
 
 # Structural Design Patterns
 
+These patterns either  
+ * extend functionality
+ * simplify functionality
+
 ## Decorator Pattern
 
 ## Facade Pattern
