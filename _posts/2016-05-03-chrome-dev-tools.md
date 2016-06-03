@@ -2,7 +2,7 @@
 layout: post
 title: Chrome Dev Tools
 ---
-![alt text]({{ "/assets/img/chrome-developer-tools.jpg" | prepend: site.baseurl }})  
+![Chrome Dev Tools]({{ "/assets/img/chrome-developer-tools.jpg" | prepend: site.baseurl }})  
 
 Here are some notes I took from a [Chrome Developer Tools course on PluralSight](https://app.pluralsight.com/library/courses/chrome-developer-tools/table-of-contents)  
 
