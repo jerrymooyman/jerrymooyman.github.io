@@ -24,26 +24,26 @@ Another option is to use the generator built by Yeoman to help you get started. 
 > yo generator
 ```
 
-*Project Structure*
+*Project Structure*  
 ``` shell
-    .
-    ├── generators/
-    │   └── app/
-    │       ├── index.js
-    │       └── templates/
-    │           └── dummyfile.txt
-    ├── .editorconfig
-    ├── .gitattributes
-    ├── .gitignore
-    ├── .eslintrc
-    ├── .travis.yml
-    ├── .yo-rc.json
-    ├── package.json
-    ├── gulpfile.js
-    ├── README.md
-    ├── LICENSE
-    └── test/
-        └── app.js
+    .  
+    ├── generators/  
+    │   └── app/    
+    │       ├── index.js  
+    │       └── templates/  
+    │           └── dummyfile.txt  
+    ├── .editorconfig  
+    ├── .gitattributes  
+    ├── .gitignore    
+    ├── .eslintrc  
+    ├── .travis.yml  
+    ├── .yo-rc.json  
+    ├── package.json  
+    ├── gulpfile.js  
+    ├── README.md  
+    ├── LICENSE  
+    └── test/  
+        └── app.js  
 ```
 
 # References  
