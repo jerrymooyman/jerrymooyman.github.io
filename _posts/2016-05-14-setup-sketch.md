@@ -16,10 +16,10 @@ This allows you to create flow charts and site trees
 
 ## References
 
-**Learn**
-[Using Sketch For Responsive Web Design (A Case Study)](https://www.smashingmagazine.com/2015/04/using-sketch-for-responsive-web-design-case-study/)
-[Learn Sketch + Code](https://designcode.io/sketch)
-[Using Sketch For Responsive Web Design (A Case Study)](https://www.smashingmagazine.com/2015/04/using-sketch-for-responsive-web-design-case-study/)
+**Learn**  
+[Using Sketch For Responsive Web Design (A Case Study)](https://www.smashingmagazine.com/2015/04/using-sketch-for-responsive-web-design-case-study/)  
+[Learn Sketch + Code](https://designcode.io/sketch)  
+[Using Sketch For Responsive Web Design (A Case Study)](https://www.smashingmagazine.com/2015/04/using-sketch-for-responsive-web-design-case-study/)  
 
 **Plugins**
 [Essential Sketch Plugins For Web Design](http://www.newmediacampaigns.com/blog/essential-sketch-plugins-for-web-design)
