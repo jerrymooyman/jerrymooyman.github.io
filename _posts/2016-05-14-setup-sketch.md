@@ -15,7 +15,6 @@ This will allow you to directly browse and install plugins.
 [AEFlowchart](https://github.com/tadija/AEFlowchart)  
 This allows you to create flow charts and site trees
 
-
 ## References
 
 **Learn**  
