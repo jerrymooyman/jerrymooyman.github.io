@@ -27,7 +27,6 @@ Another option is to use the generator built by Yeoman to help you get started. 
 Project Structure  
 
 ``` shell
-.  
 ├── generators/  
 │   └── app/    
 │       ├── index.js  
