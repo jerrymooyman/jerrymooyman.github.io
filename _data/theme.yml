@@ -19,15 +19,15 @@ social:
   #flickr: johndoe
 
 # "Hi, I'm _______"
-name: Jerry Mooyman
+name: Jerry
 email: jamooyman@gmail.com
-tagline: "weak opinions, strongly held"
+tagline: "still working out what I'm supposed to be doing..."
 
 # Google Analytics key, leave blank to ignore
-google_analytics_key: UA-xxxx-x
+google_analytics_key:
 
 # Toggle "Postings are my own" disclaimer in footer
 show_disclaimer: true
 
 # Toggle link/icon to view atom feed (/atom.xml) in sidebar
-show_atom_feed: true
+show_atom_feed: false
