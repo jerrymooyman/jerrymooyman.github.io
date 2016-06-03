@@ -34,7 +34,7 @@ Install it globally. This will only need to be done once.
 
 *This is a list of my favourite genertors*
 
-## [React-Webpack-Redux](https://github.com/stylesuxx/generator-react-webpack-redux) 
+## React-Webpack-Redux
 
 ``` shell
 > npm install -g generator-react-webpack-redux
