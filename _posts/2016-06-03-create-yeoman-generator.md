@@ -8,8 +8,9 @@ categories:
 
 # Yeoman Generators  
 There are many generators available for scafolding your web application with Yeoman.  These are very opinionated and may not fit your project needs perfectly.  
+In this case, you will need to do additional work to add any missing packages and remove any packages that you won't be using. Each additional thing you need to do, takes away from the benefits of using a generator in the first place.  
 
-So, why not create your own generator?
+When you get to a point where the benefits are no longer obvious, you may think about writing you own generator.  
 
 Yeoman provides documentation to do just that.
 
