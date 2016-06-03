@@ -191,6 +191,26 @@ You can see by this example that the logic for setting up and determining the re
 
 ## Singleton Pattern
 
+``` javascript
+var TaskRepo = (function() {
+    var taskRepo;
+    function createRepo() {
+        var taskRepo = new Object('Task')
+        return taskRepo
+    }
+    return {
+        getInstance: function() {
+            if(!taskRepo) {
+                taskRepo = createRepo()
+            }
+            return taskRepo
+        }
+    }
+})();
+
+var repo1 = TaskRepo.getInstance()
+```
+
 # Structural Design Patterns
 
 ## Decorator Pattern
