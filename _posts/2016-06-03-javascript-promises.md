@@ -121,7 +121,7 @@ It is important to note, that a promise will only call the `fulfilled` or `rejec
 If no `rejection` method is present, then control will skip forward to the next `then` in the chain with a rejection callback.  
 
 # JavaScript Exceptions  
-When javascript exceptions occur inside a promise constructor, the promise implicityly rejects.  
+When javascript exceptions occur inside a promise constructor, the promise implicitly rejects.  
 
 This gives the added benefit of additional error handling, so it pays to do promise related work inside the promise constructor callback.  
 
