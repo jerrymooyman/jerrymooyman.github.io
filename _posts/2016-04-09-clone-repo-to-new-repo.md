@@ -4,7 +4,7 @@ title: Clone an existing repository into a new repository
 categories:
 - blog
 ---
-![alt text]({{ "/assets/images/git-tricks.png" | prepend: site.baseurl }})  
+![alt text]({{ "/assets/img/git-tricks.png" | prepend: site.baseurl }})  
 
 This is useful if you want to start a new project using an existing repo as a slingshot (starting point). For this example, I have a repo with some basic scaffolding which I will use to start other projects from.  
 
@@ -13,13 +13,13 @@ This is useful if you want to start a new project using an existing repo as a sl
 2) Clone existing repo into a new directory  
 
 ``` shell 
-$ git clone https://github.com/jerrymooyman/howto-react-with-webpack.git jam-resume      
+git clone https://github.com/jerrymooyman/howto-react-with-webpack.git jam-resume      
 ```
 
 3) Now, edit the git config file and point your repo to a new origin  
 
 ``` shell 
-$ cd jam-resume  
+cd jam-resume  
 
     [remote "origin"]  
     fetch = +refs/heads/*:refs/remotes/origin/*  
@@ -29,7 +29,7 @@ $ cd jam-resume
 4) Push your changes  
 
 ``` shell
-$ git push origin master  
+git push origin master  
 ```
 
 ### References
