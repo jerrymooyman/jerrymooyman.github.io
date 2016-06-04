@@ -59,6 +59,7 @@ NB: jQuery will not return an error object into rejection callbacks.
 Chaining is done by chaining multiple `then`s after each other to transform results or perform additional async actions.
 
 Transforming  
+
 ``` javascript
 get('story.json').then(function(response) {
   return JSON.parse(response);
