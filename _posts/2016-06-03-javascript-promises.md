@@ -202,7 +202,7 @@ getJSON('story.json').then(function(story) {
 ```
 
 
-# Static Methods  
+# Promise API  
 
 **Promise.resolve(promise);**  
 Returns promise (only if promise.constructor == Promise)  
