@@ -73,6 +73,7 @@ If your `then` method returns a value, that value is passed into the scope of th
 If your `then` method returns a promise, the next `then` method will wait for that promise to settle.  
 
 This is some cool example code  
+
 ``` javascript
 var storyPromise;
 
@@ -97,6 +98,7 @@ getChapter(0).then(function(chapter) {
 
 # When There are Errors  
 There are 2 usable forms  
+
 ``` javascript
 // example 1
 get('story.json').then(function(response) {
@@ -126,6 +128,7 @@ This gives the added benefit of additional error handling, so it pays to do prom
 This is also the case for exceptions that occur inside `then` methods.
 
 # Thinking about things in a sequence  
+
 ``` javascript
 // Start off with a promise that always resolves
 var sequence = Promise.resolve();
@@ -144,6 +147,7 @@ story.chapterUrls.forEach(function(chapterUrl) {
 In this case, we start with a `resolved` promise. We can then chain `then`s in order the iterate an array sequentially.
 
 A tidier way of doing the above is to use Array.prototype.reduce function. We just pass it a `resolve`d promise as the initial value. 
+
 ``` javascript
 // Loop through our chapter urls
 story.chapterUrls.reduce(function(sequence, chapterUrl) {
@@ -158,6 +162,7 @@ story.chapterUrls.reduce(function(sequence, chapterUrl) {
 
 # Multiple async calls concurrently
 Rather than calling async methods sequentially, one after the other, we can make all our async calls simultaneously and then process then sequentially when the last one has arrived.  
+
 ``` javascript
 Promise.all(arrayOfPromises).then(function(arrayOfResults) {
   //...
@@ -165,6 +170,7 @@ Promise.all(arrayOfPromises).then(function(arrayOfResults) {
 ```
 
 This example maps an array of promises and then reduces them to chain promises together in order to process then in order.  
+
 ``` javascript
 getJSON('story.json').then(function(story) {
   addHtmlToPage(story.heading);
