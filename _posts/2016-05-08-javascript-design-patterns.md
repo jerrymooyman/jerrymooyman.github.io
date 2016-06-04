@@ -79,12 +79,11 @@ var MyObject = function (param1, param2) {
 var object = new MyObject('hello', 'world!');
 ```
 
-The `new` keyword
-
-* creates a brand new object
-* links to an object prototype
-* binds `this` to the new object scope
-* implicitly returns `this`
+The `new` keyword  
+* creates a brand new object  
+* links to an object prototype  
+* binds `this` to the new object scope  
+* implicitly returns `this`  
 
 The drawback is that the `toString` function is duplicated for each copy of the MyObject.
 An improvement would be to move the `toString` function to the prototype.
