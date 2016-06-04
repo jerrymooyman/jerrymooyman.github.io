@@ -38,14 +38,6 @@ NB: `Object.call(this)` is a way to call a method on a prototype in the context 
 
 # Flyweight
 
-# Behavioral Design Patterns
-
-## Observer Pattern
-
-## Mediator Pattern
-
-## Command Pattern
-
 
 # References
 [Practical Design Patterns in JavaScript](https://app.pluralsight.com/library/courses/javascript-practical-design-patterns)  
