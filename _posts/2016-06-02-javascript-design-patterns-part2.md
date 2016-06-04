@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript Design Patterns: Structural
+title: JavaScript Design Patterns - Structural
 ---
 
 These patterns either  

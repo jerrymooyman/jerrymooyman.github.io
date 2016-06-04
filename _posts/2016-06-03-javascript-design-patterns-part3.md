@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript Design Patterns: Behavioral
+title: JavaScript Design Patterns - Behavioral
 ---
 
 # Observer Pattern
