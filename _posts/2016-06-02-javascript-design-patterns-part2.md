@@ -4,8 +4,8 @@ title: JavaScript Design Patterns - Structural
 ---
 
 These patterns either  
- * extend functionality  
- * simplify functionality  
+* extend functionality  
+* simplify functionality  
 
 # Decorator Pattern  
 
