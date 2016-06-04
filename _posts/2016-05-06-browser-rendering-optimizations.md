@@ -26,14 +26,14 @@ This is the process of turning an image into pixels.
 
 javascript -> style -> layout -> paint -> composite
 
-if we change an elements geomentry, i.e. width
-javascript -> style -> layout -> paint -> composite
+if we change an elements geomentry, i.e. width  
+    javascript -> style -> layout -> paint -> composite
 
-if we change image background
-javascript -> style -> paint -> composite
+if we change image background  
+    javascript -> style -> paint -> composite
 
-if we change applicable layers
-javascript -> style -> composite
+if we change applicable layers  
+    javascript -> style -> composite
 
 (i) different ccs properties affect the performance of a web page in different ways
 
