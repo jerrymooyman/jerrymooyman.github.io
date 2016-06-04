@@ -96,8 +96,23 @@ This is done by using the following format:
 
 ``` javascript
 MyObject.prototype.toString = function() {
-    return this.param1 + '' + this.param2;
+    return this.param1 + ' ' + this.param2;
 }
+```
+
+So, in `Eric Elliot's` talk at Fluent Conf 2013, creating objects using the `new` keyword is the old and busted way.  
+This is now the prefered hot way of doing it:  
+
+``` javascript
+var MyObject = {
+    toString: function() {
+        return this.param1 + ' ' + this.param2;
+    }
+}
+var myObject = Object.create(MyObject)
+myObject.param1 = 'hello'
+myObject.param2 = 'world'
+
 ```
 
 ## Module Pattern
