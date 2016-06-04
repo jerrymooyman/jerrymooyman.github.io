@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript Design Patterns
+title: JavaScript Design Patterns: Creational
 ---
 
 We all know what design patterns are. Just do them. Here are some notes on how to do them in javascript.
