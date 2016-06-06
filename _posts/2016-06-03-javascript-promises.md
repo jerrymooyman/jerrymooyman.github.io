@@ -48,6 +48,7 @@ promise.then(function(result) {
 Fortunately, the javascript promise API will play nicely with other promise libraries. If an object has a `then` method on it, it will be treated like a standard promise.  
 
 In the case of jQuery Deferred, we can use the following:  
+
 ``` javascript
 var jsPromise = Promise.resolve($.ajax('/whatever.json'));
 ```
