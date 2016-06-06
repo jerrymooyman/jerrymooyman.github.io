@@ -23,7 +23,7 @@ One thing to be aware of, is that these generators are very opinionated. They ha
 ## Installation
 
 ``` shell
-> npm install -g yo
+npm install -g yo
 ```
 
 Install it globally. This will only need to be done once.  
@@ -52,8 +52,26 @@ yo react-webpack-redux
 
 ```
 
+# Getting Help  
+
+Run the app generator command with `--help` switch
+
+``` shell
+yo aspnet --help
+```
+
+![Yeoman help]({{ "/assets/img/yeoman-help1.png" | prepend: site.baseurl }})  
+
+To find out more about a sub-generator, just run the help on it as you would expect.
+
+``` shell
+yo aspnet:Class --help
+```
+
+![Yeoman help]({{ "/assets/img/yeoman-help2.png" | prepend: site.baseurl }})  
+
 
 # References  
 [Yeoman](http://yeoman.io/)  
 [generator-react-webpack-redux](https://github.com/stylesuxx/generator-react-webpack-redux)  
-
+[Yeoman Fundamentals - Pluralsight](https://app.pluralsight.com/library/courses/yeoman-fundamentals)
