@@ -15,7 +15,7 @@ This has the following issues:
      * invoke your callback  
      * invoke it only once  
      * etc.  
-2. You invariably need to perform some action when your ajax call resolves. If these actions in turn require a further ajax call, you create a series of nested callbacks. This creates an anti pattern known as callback hell.  
+2. You invariably need to perform some action when your ajax call resolves. If these actions in turn require a further ajax call, you create a series of nested callbacks. This creates an anti pattern known as 'the pyramid of death' or callback hell.  
 
 # Promises
 
