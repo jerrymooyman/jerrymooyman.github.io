@@ -15,7 +15,7 @@ This has the following issues:
      * invoke your callback  
      * invoke it only once  
      * etc.  
-2. You invariably need to perform some action when your ajax call resolves. If these actions in turn require a further ajax call, you create a series of nested callbacks. This creates an anti pattern known as callback hell.  
+2. You invariably need to perform some action when your ajax call resolves. If these actions in turn require a further ajax call, you create a series of nested callbacks. This creates an anti pattern known as 'the pyramid of death' or callback hell.  
 
 # Promises
 
@@ -48,6 +48,7 @@ promise.then(function(result) {
 Fortunately, the javascript promise API will play nicely with other promise libraries. If an object has a `then` method on it, it will be treated like a standard promise.  
 
 In the case of jQuery Deferred, we can use the following:  
+
 ``` javascript
 var jsPromise = Promise.resolve($.ajax('/whatever.json'));
 ```
