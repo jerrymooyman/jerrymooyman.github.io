@@ -102,7 +102,7 @@ Now you can run `yo` and you should see the new generator in the list of availab
 
 # Working with the file system
 
-**File Contexts**
+## File Contexts
 
 * destination - where the application is scaffolded
 * template - where templates are stored
@@ -127,11 +127,13 @@ yo jam-react
 
 **Yeoman API methods** 
 
-|this.log(message) | log to stdout |
-|this.templatePath() | the location where our templates live |
-|this.destinationPath() | the location where our files will be written to |
-|this.copy(source, destination) | copies source to destination |
-|this.directory(source, destination) | copies entire source directory to destination |
+method | description
+--- | --- 
+this.log(message) | log to stdout 
+this.templatePath() | the location where our templates live 
+this.destinationPath() | the location where our files will be written to 
+this.copy(source, destination) | copies source to destination 
+this.directory(source, destination) | copies entire source directory to destination 
 
 
 
