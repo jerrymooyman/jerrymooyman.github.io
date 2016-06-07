@@ -163,8 +163,39 @@ Running the generator will now yield the following result:
 
 ![Yeoman template]({{ "/assets/img/yeoman-template1.png" | prepend: site.baseurl }})  
 
+## Dynamic file generation
 
+Configuration files, such as bower.json, need to be generated dynamically.
+Here is an example
 
+``` javascript
+bower: function() {
+    var bowerJson = {
+        name: 'my-awesome-app',
+        license: 'MIT',
+        dependencies: {}
+    };
+    bowerJson.dependencies['packagename'] = '~1.2.3';
+    ... etc
+    this.fs.writeJSON('bower.json', bowerJson);
+}
+
+```
+
+## Other artifacts
+
+``` javascript
+packageJSON: function(){
+    this.fs.copy('_package.json', 'package.json');
+},
+
+git: function(){
+    this.fs.copy('gitignore', '.gitignore');
+}
+
+```
+
+NB: Note that, by convention, files that would normally start with a `.` would be named without the `.` in the source.
 
 **Yeoman API methods** 
 
