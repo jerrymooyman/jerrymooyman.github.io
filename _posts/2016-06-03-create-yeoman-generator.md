@@ -143,11 +143,13 @@ html: function() {
 }
 ```
 
-Running the generator will now yield the following result
+Running the generator will now yield the following result:
+
+* index.html file has been copied into the src directory
+* templating engine has injected the title `my awesome app` into the title tag of our index.html.
 
 ![Yeoman template]({{ "/assets/img/yeoman-template1.png" | prepend: site.baseurl }})  
 
-You can see here that the title `my awesome app` has been injected into the title tag of our index.html.
 
 
 # Running the Generator
