@@ -127,13 +127,13 @@ yo jam-react
 
 **Yeoman API methods** 
 
-method | description
---- | --- 
-this.log(message) | log to stdout 
-this.templatePath() | the location where our templates live 
-this.destinationPath() | the location where our files will be written to 
-this.copy(source, destination) | copies source to destination 
-this.directory(source, destination) | copies entire source directory to destination 
+| method | description
+| --- | --- | 
+| this.log(message) | log to stdout | 
+| this.templatePath() | the location where our templates live | 
+| this.destinationPath() | the location where our files will be written to | 
+| this.copy(source, destination) | copies source to destination | 
+| this.directory(source, destination) | copies entire source directory to destination | 
 
 
 
