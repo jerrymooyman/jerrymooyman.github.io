@@ -114,6 +114,19 @@ Create a `templates` directory in the `app` directory. This will be the home for
 Now place a favicon.ico file into the templates directory. As a convention, prefix all template files with `_` to denote that its a source file.  
 So, our favicon.ico should be _favicon.ico.
 
+## Running the Generator
+
+Create a new directory, cd into it and run the generator.  
+
+``` shell
+mkdir test-app && cd test-app
+yo jam-react
+```
+
+You should see the following output.
+
+![Yeoman run]({{ "/assets/img/yeoman-run1.png" | prepend: site.baseurl }})  
+
 ## Adding a template
 
 Add a _index.html file to the templates directory. This will be a typical SPA index.html file.
@@ -152,18 +165,6 @@ Running the generator will now yield the following result:
 
 
 
-# Running the Generator
-
-Create a new directory, cd into it and run the generator.  
-
-``` shell
-mkdir test-app && cd test-app
-yo jam-react
-```
-
-You should see the following output.
-
-![Yeoman run]({{ "/assets/img/yeoman-run1.png" | prepend: site.baseurl }})  
 
 **Yeoman API methods** 
 
