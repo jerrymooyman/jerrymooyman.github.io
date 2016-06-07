@@ -114,6 +114,42 @@ Create a `templates` directory in the `app` directory. This will be the home for
 Now place a favicon.ico file into the templates directory. As a convention, prefix all template files with `_` to denote that its a source file.  
 So, our favicon.ico should be _favicon.ico.
 
+## Adding a template
+
+Add a _index.html file to the templates directory. This will be a typical SPA index.html file.
+
+Update the title tag in the header as follows:
+
+``` html
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>`<%= appname %>`</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+```
+
+The important thing to notice is that we have placed an ejs (effective javascript templating) directive into the title tag. This is where our generator will inject a value into.
+
+Add the following to our generator:  
+
+``` javascript
+html: function() {
+    this.fs.copyTpl(
+        this.templatePath('_index.html'),
+        this.destinationPath('src/index.html'),
+        {
+            appname: 'my awesome app'
+        }
+    );
+}
+```
+
+Running the generator will now yield the following result
+
+![Yeoman template]({{ "/assets/img/yeoman-template1.png" | prepend: site.baseurl }})  
+
+You can see here that the title `my awesome app` has been injected into the title tag of our index.html.
+
+
 # Running the Generator
 
 Create a new directory, cd into it and run the generator.  
@@ -136,8 +172,6 @@ You should see the following output.
 | this.destinationPath() | the location where our files will be written to | 
 | this.copy(source, destination) | copies source to destination | 
 | this.directory(source, destination) | copies entire source directory to destination | 
-
-
 
 
 # References  
