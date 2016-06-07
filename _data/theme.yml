@@ -22,7 +22,8 @@ social:
 name: Jerry
 email: jamooyman@gmail.com
 # tagline: "<code class='highlighter-rouge'>Computer Programmer</code> ... blah blah ... <code class='highlighter-rouge'>JavaScript</code> ... blah blah ... <code class='highlighter-rouge'>Tennis</code> blah blah ... <code class='highlighter-rouge'>Home Improvement</code> ... blah blah ... <code class='highlighter-rouge'>Chess</code>"
-tagline: "`if you don't understand how something works, then you have no hope in understanding why something doesn't work` - Some dude"
+# tagline: "`if you don't understand how something works, then you have no hope in understanding why something doesn't work` - Some dude"
+tagline: "This is my note pad. You can read it if you like. I might be wrong. I might not be right. It could definitely be better..."
 
 # Google Analytics key, leave blank to ignore
 google_analytics_key:
