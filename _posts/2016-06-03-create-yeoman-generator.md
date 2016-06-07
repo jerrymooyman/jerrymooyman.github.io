@@ -116,19 +116,21 @@ So, our favicon.ico should be _favicon.ico.
 
 # Running the Generator
 
-Create a new directory and run the generator.  
+Create a new directory, cd into it and run the generator.  
 
 ``` shell
 mkdir test-app && cd test-app
 yo jam-react
 ```
 
+You should see the following output.
+
 ![Yeoman run]({{ "/assets/img/yeoman-run1.png" | prepend: site.baseurl }})  
 
 **Yeoman API methods** 
 
 | method | description
-| --- | --- | 
+| ---- | ---- | 
 | this.log(message) | log to stdout | 
 | this.templatePath() | the location where our templates live | 
 | this.destinationPath() | the location where our files will be written to | 
