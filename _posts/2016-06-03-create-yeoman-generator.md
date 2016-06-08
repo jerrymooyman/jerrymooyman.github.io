@@ -235,7 +235,27 @@ We run our generator without the `--includeyosay` switch.
 Now with the `--includeyosay` switch.
 
 ![Yeoman yosay]({{ "/assets/img/yeoman-option2.png" | prepend: site.baseurl }})  
+## Prompts
 
+In our prompting queue, we add the following code
+
+``` javascript
+return this.prompt([{
+    type: 'input',
+    name: 'title',
+    message: 'App title name',
+    default: 'My Cool App'
+}]).then(function(answers) {
+    this.log(answers);
+    this.apptitle = answers.title;
+}.bind(this));
+```
+
+>The prompt method is asynchronous and return a promise. You'll need to return the promise from your task in order to wait for it's completion before running the next one.
+
+Running our generator now will give the following output
+
+![Yeoman prompt]({{ "/assets/img/yeoman-prompt.png" | prepend: site.baseurl }})  
 
 # Yeoman API methods  
 
