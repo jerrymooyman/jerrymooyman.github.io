@@ -5,6 +5,9 @@ categories:
 - javascript
 ---
 
+* TOC
+{:toc}
+
 These are some notes on JavaScript promises according to Jake Archibald and Kyle Simpson.
 
 # The Problem  
