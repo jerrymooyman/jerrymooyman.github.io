@@ -5,6 +5,8 @@ categories:
 - javascript
 - yeoman
 ---
+* TOC
+{:toc}
 
 # Yeoman Generators  
 There are many generators available for scafolding your web application with Yeoman.  These are very opinionated and may not fit your project needs perfectly.  
