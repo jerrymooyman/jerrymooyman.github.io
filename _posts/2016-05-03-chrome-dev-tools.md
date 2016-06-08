@@ -4,9 +4,6 @@ title: Chrome Dev Tools
 ---
 ![Chrome Dev Tools]({{ "/assets/img/chrome-developer-tools.jpg" | prepend: site.baseurl }})  
 
-<DIV class="no_toc">
-# Table of Contents  
-</div>
 * TOC
 {:toc}
 
