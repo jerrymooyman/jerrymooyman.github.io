@@ -311,7 +311,6 @@ this.installDependencies({
 ## Composing Generators
 
 
-
 # Yeoman API methods  
 
 | method | description
