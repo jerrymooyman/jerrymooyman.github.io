@@ -199,6 +199,33 @@ git: function(){
 
 NB: Note that, by convention, files that would normally start with a `.` would be named without the `.` in the source.
 
+# User Input
+
+## YoSay & Chalk
+
+[YoSay](https://github.com/yeoman/yosay) is a utility to get the Yeoman character to say something.  
+[Chalk](https://github.com/chalk/chalk) is a utility to do colourful log messages.
+
+``` shell
+npm install --save yosay chalk
+```
+
+Once installed add require statements to our generator and add some code into the prompting method.
+
+``` javascript
+prompting: function() {
+    this.log(yosay('Welcome to JAM React Generator!'));
+},
+```
+
+We should get the following output.
+
+![Yeoman yosay]({{ "/assets/img/yeoman-yosay.png" | prepend: site.baseurl }})  
+
+## Arguments
+
+
+
 # Yeoman API methods  
 
 | method | description
