@@ -297,7 +297,7 @@ this.installDependencies();
 
 If we wanted to have more control by allowing the user to choose whether to install dependencies or not, there is already a built in facility for this.
 
-![Yeoman yosay]({{ "/assets/img/yeoman-option1.png" | prepend: site.baseurl }})  
+![Yeoman yosay]({{ "/assets/img/yeoman-help3.png" | prepend: site.baseurl }})  
 
 You can see that there is a `--skip-install` switch available.  
 So, we can do the following:
