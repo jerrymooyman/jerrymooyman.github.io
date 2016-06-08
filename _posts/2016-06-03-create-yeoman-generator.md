@@ -235,6 +235,7 @@ We run our generator without the `--includeyosay` switch.
 Now with the `--includeyosay` switch.
 
 ![Yeoman yosay]({{ "/assets/img/yeoman-option2.png" | prepend: site.baseurl }})  
+
 ## Prompts
 
 In our prompting queue, we add the following code
