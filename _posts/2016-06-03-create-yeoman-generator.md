@@ -238,6 +238,8 @@ Now with the `--includeyosay` switch.
 
 ## Prompts
 
+Prompts enable us to use user preferences for configuring our generator for more customised app generation.
+
 In our prompting queue, we add the following code
 
 ``` javascript
@@ -257,6 +259,56 @@ return this.prompt([{
 Running our generator now will give the following output
 
 ![Yeoman prompt]({{ "/assets/img/yeoman-prompt.png" | prepend: site.baseurl }})  
+
+# Dependencies
+
+## Configuration and the Store API  
+
+Inside our prompt promise callback we can persist settings in the `config` object.  
+
+``` javascript
+this.config.set('apptitle', answers.title);
+this.config.save();
+```
+
+To retrieve the value we do the following
+
+``` javascript
+var myVal = this.config.get('apptitle');
+```
+
+## Managing Dependencies
+
+In the install queue of the generator pipeling we specify if we want to install dependencies as per our bower/package config files.
+
+``` javascript
+install: function(){
+    this.bowerInstall();
+    this.npmInstall();
+}
+```
+
+As you can see, these commands run the bower and npm dependencies in turn.  
+Alternatively, we could do the following
+
+``` javascript
+this.installDependencies();
+```
+
+If we wanted to have more control by allowing the user to choose whether to install dependencies or not, there is already a built in facility for this.
+
+![Yeoman yosay]({{ "/assets/img/yeoman-option1.png" | prepend: site.baseurl }})  
+
+You can see that there is a `--skip-install` switch available.  
+So, we can do the following:
+
+``` javascript
+this.installDependencies({
+    skipInstall: this.options['skip-install'];
+});
+```
+
+## Composing Generators
 
 # Yeoman API methods  
 
@@ -301,6 +353,10 @@ Project Structure
 └── test/  
     └── app.js  
 ```
+
+
+# Follow up reading
+* wiredep
 
 
 # References  
