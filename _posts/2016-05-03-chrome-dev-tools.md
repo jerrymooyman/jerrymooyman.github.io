@@ -4,6 +4,9 @@ title: Chrome Dev Tools
 ---
 ![Chrome Dev Tools]({{ "/assets/img/chrome-developer-tools.jpg" | prepend: site.baseurl }})  
 
+* TOC
+{:toc}
+
 Here are some notes I took from a [Chrome Developer Tools course on PluralSight](https://app.pluralsight.com/library/courses/chrome-developer-tools/table-of-contents)  
 
 ## The Console
