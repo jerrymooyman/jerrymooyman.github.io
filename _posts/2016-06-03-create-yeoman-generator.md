@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create Your Own Yeoman Generator
+title: Yeoman, there's no need to feel down
 categories:
 - javascript
 - yeoman
@@ -218,7 +218,7 @@ prompting: function() {
 },
 ```
 
-We should get the following output.
+We should get the following output with the Yeoman character saying our message.
 
 ![Yeoman yosay]({{ "/assets/img/yeoman-yosay.png" | prepend: site.baseurl }})  
 

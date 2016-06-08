@@ -2,6 +2,8 @@
 layout: post
 title: Browser Rendering Optimisation
 ---
+* TOC
+{:toc}
 
 ## The Critical Rendering Path
 

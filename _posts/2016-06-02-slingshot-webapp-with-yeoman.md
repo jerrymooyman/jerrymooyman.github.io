@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Slingshot Webapps with Yeoman Generators
+title: Generators! Saddle Up.
 categories:
 - blog
 - javascript
 ---
+* TOC
+{:toc}
 
 # The Value of Setting up a new Project  
 It is very important to go through the process of setting up new projects from scratch. It helps to understand what role the various components play in the overall scheme of you web application.  
