@@ -199,7 +199,7 @@ git: function(){
 
 NB: Note that, by convention, files that would normally start with a `.` would be named without the `.` in the source.
 
-**Yeoman API methods** 
+# Yeoman API methods  
 
 | method | description
 | ---- | ---- | 
