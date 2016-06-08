@@ -5,6 +5,8 @@ categories:
 - javascript
 - yeoman
 ---
+These are some notes about creating your own Yeoman generator.
+
 * TOC
 {:toc}
 
@@ -12,46 +14,13 @@ categories:
 There are many generators available for scafolding your web application with Yeoman.  These are very opinionated and may not fit your project needs perfectly.  
 In this case, you will need to do additional work to add any missing packages and remove any packages that you won't be using. Each additional thing you need to do, takes away from the benefits of using a generator in the first place.  
 
-When you get to a point where the benefits are no longer obvious, you may think about writing you own generator.  
+Or you could write your own generator.
 
-Yeoman provides documentation to do just that.
+Yeoman provides documentation to do it. There are also may tutorials on how to do it.
 
-In addition, you could use the generator built by Yeoman to help you get started. Its a generator to generate generators...
+# Creating a Generator
 
-# Generator-Generator  
-[Generator-Generator Repo](https://github.com/yeoman/generator-generator)  
-
-## Setup  
-``` shell
-npm install -g generator-generator
-yo generator
-```
-
-Project Structure  
-
-``` shell
-├── generators/  
-│   └── app/    
-│       ├── index.js  
-│       └── templates/  
-│           └── dummyfile.txt  
-├── .editorconfig  
-├── .gitattributes  
-├── .gitignore    
-├── .eslintrc  
-├── .travis.yml  
-├── .yo-rc.json  
-├── package.json  
-├── gulpfile.js  
-├── README.md  
-├── LICENSE  
-└── test/  
-    └── app.js  
-```
-
-# Manual
-
-## Setup
+## Installation
 
 Start by just initialising a new node app. Lets call it `generator-jam-react`. By convention, a generator name should start with `generator`.
 
@@ -67,7 +36,7 @@ npm install yeoman-generator --save
 
 The yeoman-generator is the base package required to build a custom generator.
 
-## Creating a generator template
+## Setup
 
 Create an `app` folder. Inside that, create an `index.js` file. As specified in the package.json config file, this will be the entry point of our generator application.
 
@@ -224,6 +193,48 @@ We should get the following output with the Yeoman character saying our message.
 
 ## Arguments
 
+In the constructor of our generator we can add the following code:
+
+``` javascript
+constructor: function () {
+    generators.Base.apply(this, arguments);
+    this.argument('appname', {
+        type: String,
+        required: true
+    });
+},
+```
+
+`this.argument` receives an argument name with some properties (as json), which will be accessable via `this.appname`.
+
+`this.appname` is in the `this` scope so it can be used throughout our other functions as required, such as injecting the appname as the title in our index.html.
+
+## Options
+
+Options are used as decision points in our generator application. These are setup in the constructor.  
+We can use an option to decide whether Yeoman should say our custom message or not.
+
+``` javascript
+// constructor
+this.option('includeyosay', {
+    desc: 'make the yeoman say our message',
+    type: Boolean,
+    default: false
+});
+
+// prompting function
+if(this.options.includeyosay) {
+    this.log(yosay('Welcome to JAM React Generator!'));
+}
+```
+
+We run our generator without the `--includeyosay` switch.
+
+![Yeoman yosay]({{ "/assets/img/yeoman-option1.png" | prepend: site.baseurl }})  
+
+Now with the `--includeyosay` switch.
+
+![Yeoman yosay]({{ "/assets/img/yeoman-option2.png" | prepend: site.baseurl }})  
 
 
 # Yeoman API methods  
@@ -235,6 +246,40 @@ We should get the following output with the Yeoman character saying our message.
 | this.destinationPath() | the location where our files will be written to | 
 | this.copy(source, destination) | copies source to destination | 
 | this.directory(source, destination) | copies entire source directory to destination | 
+
+# Generator-Generator  
+[Generator-Generator Repo](https://github.com/yeoman/generator-generator)  
+
+In addition, you could use the generator built by Yeoman to help you get started. Its a generator to generate generators...
+
+Installation
+
+``` shell
+npm install -g generator-generator
+yo generator
+```
+
+Project Structure  
+
+``` shell
+├── generators/  
+│   └── app/    
+│       ├── index.js  
+│       └── templates/  
+│           └── dummyfile.txt  
+├── .editorconfig  
+├── .gitattributes  
+├── .gitignore    
+├── .eslintrc  
+├── .travis.yml  
+├── .yo-rc.json  
+├── package.json  
+├── gulpfile.js  
+├── README.md  
+├── LICENSE  
+└── test/  
+    └── app.js  
+```
 
 
 # References  
