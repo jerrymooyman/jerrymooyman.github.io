@@ -10,7 +10,7 @@ categories:
 
 These are some notes on how I have configured my Iterm2. 
 
-![iTerm]({{ "/assets/img/iterm-setup.png" | prepend: site.baseurl }})  
+![iTerm]({{ "/assets/img/iTerm-setup.png" | prepend: site.baseurl }})  
 
 NB: I use zch instead of bash.
 
